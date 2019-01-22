@@ -1,10 +1,16 @@
 package App
 
-object GreeterApplication extends App
-{
-  def greet (name : String) : Unit = println(s"Hello $name")
+object GreeterApplication extends App {
+  def greet(name: String): Unit = {
 
-  val name = "Claire"
+    if (name == "claire") {
+      println(s"You don't get a hello")
+    } else {
+      println(s"Hello $name")
+    }
+  }
+
+  val name = ("Claire")
 
   greet(name)
 }
