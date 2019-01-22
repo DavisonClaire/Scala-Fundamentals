@@ -2,5 +2,9 @@ package App
 
 object GreeterApplication extends App
 {
-println("Hello!")
+  def greet (name : String) : Unit = println(s"Hello $name")
+
+  val name = "Claire"
+
+  greet(name)
 }
