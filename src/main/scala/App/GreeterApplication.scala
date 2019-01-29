@@ -1,16 +1,19 @@
 package App
 
-object GreeterApplication extends App {
-  def greet(name: String): Unit = {
-
+class Person (name : String) {
+  def speak() : String = {
     if (name == "claire") {
-      println(s"You don't get a hello")
-    } else {
-      println(s"Hello $name")
+      s"You don't get a Hello!"
+      } else {
+      s"Hello $name"
+
     }
   }
-
-  val name = ("Claire")
-
-  greet(name)
 }
+
+object GreeterApplication extends App{
+  val name = "Claire"
+  val person = new Person (name)
+  println(person.speak())
+}
+
